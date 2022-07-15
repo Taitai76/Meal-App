@@ -5,7 +5,7 @@ body{
     text-align: center;
 }
 .searchArea{
-    margin: 0;
+    margin: auto;
     font-size: large;
 }
 #mealRecipe{
