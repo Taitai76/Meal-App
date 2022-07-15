@@ -8,10 +8,16 @@ body{
     margin: auto;
     font-size: large;
 }
+.recpImg{
+    margin: auto;
+}
+.cards{
+    list-style: none;
+}
 #mealRecipe{
     display: grid;
     list-style-type: none;
 }
-.cards{
-    list-style: none;
+#topRecpCard{
+    display: block;
 }

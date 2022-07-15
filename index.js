@@ -58,9 +58,9 @@ function recipeInformation(data){
     recpObj=data.meals[0];
     console.log(recpObj.strMeal)
     let recipeCard =`
-    <h3>${recpObj.strMeal}</h3>
-    <img src = "${recpObj.strMealThumb}">
-    <div>
+    <div id="topRecpCard">
+        <h3>${recpObj.strMeal}</h3>
+        <img class="recpImg" src = "${recpObj.strMealThumb}">
         <h4>Instructions</h4>
         <p> ${recpObj.strInstructions}</p>
     </div>
