@@ -20,7 +20,8 @@ function recipeL(){
         if (data.meals){
         data.meals.forEach(rec => renderRCards(rec))
     }else{
-        foodL.innerHTML="ingredient did not match a recipe in out database";
+        let tHtml=`<div id="error">ingredient did not match a recipe in our database</div>`
+        foodL.innerHTML=tHtml;
     }
 });
 }

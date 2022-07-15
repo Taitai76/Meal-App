@@ -11,7 +11,7 @@ body{
     font-size: large;
 }
 #sbutton{
-
+    background-color: #272343;
 }
 .recpImg{
     margin: auto;
@@ -23,7 +23,18 @@ body{
     display: grid;
     list-style-type: none;
 }
+input[type=text]{
+    width: 25em;
+    height: 1.75em;
+    border-radius: 10px;
+    border: 1px solid #e3f6f5;
+}
 #topRecpCard{
-    display: block;
+    background-color: #bae8e8;
 
+}
+#error{
+    background-color: #bae8e8;
+    font-size: medium;
+    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
