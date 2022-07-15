@@ -1,3 +1,14 @@
 #mHeading{
     text-align: center;
 }
+body{
+    text-align: center;
+}
+.searchArea{
+    margin: 0;
+    font-size: large;
+}
+#mealRecipe{
+    display: grid;
+    list-style: none;
+}
