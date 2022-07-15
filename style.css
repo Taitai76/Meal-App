@@ -10,5 +10,8 @@ body{
 }
 #mealRecipe{
     display: grid;
+    list-style-type: none;
+}
+.cards{
     list-style: none;
 }
