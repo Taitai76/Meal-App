@@ -10,9 +10,13 @@ function recipeL(){
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient.value}`)
     .then(response => response.json())
     .then(data => {
-        
         foodL.innerHTML="";
-        data.meals.forEach(rec => renderRCards(rec))});
+        if (data.meals){
+        data.meals.forEach(rec => renderRCards(rec))
+    }else{
+        foodL.innerHTML="ingredient did not match a recipe in out database";
+    }
+});
 }
 
 function renderRCards(data){
