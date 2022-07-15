@@ -4,13 +4,14 @@
 body{
     text-align: center;
     font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    background-color: #ffffff;
 }
 .searchArea{
     margin: auto;
     font-size: large;
 }
 #sbutton{
-    
+
 }
 .recpImg{
     margin: auto;
@@ -24,4 +25,5 @@ body{
 }
 #topRecpCard{
     display: block;
+
 }
