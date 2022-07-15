@@ -1,14 +1,25 @@
 document.addEventListener("DOMContentLoaded",function() {
 const submitB= document.getElementById('sButton');
+const foodL= document.getElementById('foodList');
 let ingredient= document.getElementById('searchInput');
 
-submitB.addEventListener('click', recipe(ingredient.value))
+submitB.addEventListener('click', recipeL)
 
-function recipe(ing){
-    console.log(ing);
-fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ing}`)
-  .then(response => response.json())
-  .then(data => console.log(data));
+function recipeL(){
+    console.log(ingredient.value);
+    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient.value}`)
+    .then(response => response.json())
+    .then(data => data.meals.forEach(rec => renderRCards(rec)));
 }
 
+function renderRCards(data){
+    console.log(data);
+    let card = document.createElement('li')
+    card.className='cards'
+    card.innerHTML =`
+    <img src = "${data.strMealThumb}">
+    <h2> ${data.strMeal}</h2>
+    `
+    
+}
 });
