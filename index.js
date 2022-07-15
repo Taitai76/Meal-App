@@ -9,7 +9,10 @@ function recipeL(){
     console.log(ingredient.value);
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient.value}`)
     .then(response => response.json())
-    .then(data => data.meals.forEach(rec => renderRCards(rec)));
+    .then(data => {
+        
+        foodL.innerHTML="";
+        data.meals.forEach(rec => renderRCards(rec))});
 }
 
 function renderRCards(data){
@@ -20,6 +23,6 @@ function renderRCards(data){
     <img src = "${data.strMealThumb}">
     <h2> ${data.strMeal}</h2>
     `
-    
+    foodL.appendChild(card);
 }
 });
