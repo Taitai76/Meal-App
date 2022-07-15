@@ -40,7 +40,7 @@ function renderRCards(data){
     foodL.appendChild(card);
 }
 
-
+//When get recipe is hoverd over the rcipie dive at top will update
 function getRecpie(e){
     e.preventDefault();
     if(e.target.classList.contains('recipe-btn')){
