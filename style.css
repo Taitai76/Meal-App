@@ -12,21 +12,26 @@ body{
 }
 #sbutton{
     background-color: #272343;
+    width: 10px;
 }
 .recpImg{
     margin: auto;
 }
 .cards{
     list-style: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    margin: 2rem 0;
 }
-#mealRecipe{
+#foodList{
     display: grid;
     list-style-type: none;
+
 }
 input[type=text]{
     width: 25em;
     height: 1.75em;
-    border-radius: 10px;
+    border-radius: 100px;
     border: 1px solid #e3f6f5;
 }
 #topRecpCard{
