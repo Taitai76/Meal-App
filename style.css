@@ -20,7 +20,7 @@ body{
 .cards{
     list-style: none;
     border-radius: 1rem;
-    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.8);
     margin: 2rem 0;
 }
 #foodList{
@@ -36,6 +36,7 @@ input[type=text]{
 }
 #topRecpCard{
     background-color: #bae8e8;
+    margin-top: 2px;
 
 }
 #error{
@@ -45,9 +46,9 @@ input[type=text]{
 }
 .recipe-btn{
     background-color: #272343;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
