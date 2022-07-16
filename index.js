@@ -31,11 +31,11 @@ function renderRCards(data){
     let card = document.createElement('li')
     card.className='cards'
     card.innerHTML =`
-    <div id=${data.idMeal}>
-    <img src = "${data.strMealThumb}">
-    <h2> ${data.strMeal}</h2>
-    <a class = "recipe-btn">Get Recipe</a>
-    </div>
+        <div id=${data.idMeal}>
+        <img src = "${data.strMealThumb}">
+        <h2> ${data.strMeal}</h2>
+        <a class = "recipe-btn">Get Recipe</a>
+        </div>
     `
     foodL.appendChild(card);
 }
@@ -60,9 +60,9 @@ function recipeInformation(data){
     let recipeCard =`
     <div id="topRecpCard">
         <h2>${recpObj.strMeal}</h2>
-        <img class="recpImg" src = "${recpObj.strMealThumb}">
+            <img class="recpImg" src = "${recpObj.strMealThumb}">
         <h3>Instructions</h3>
-        <p> ${recpObj.strInstructions}</p>
+            <p> ${recpObj.strInstructions}</p>
         <h3>Video</h3>
         <a class = "recipe-btn" href = "${recpObj.strYoutube}">Watch Video</a>
     </div>
