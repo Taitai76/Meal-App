@@ -12,7 +12,6 @@ foodL.addEventListener('mouseover', getRecpie)
 
 //GET Data From Meal DB
 function recipeL(){
-    console.log(ingredient.value);
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient.value}`)
     .then(response => response.json())
     .then(data => {
@@ -28,7 +27,6 @@ function recipeL(){
 
 //Renders data into list
 function renderRCards(data){
-    console.log(data);
     let card = document.createElement('li')
     card.className='cards'
     card.innerHTML =`
@@ -46,7 +44,6 @@ function getRecpie(e){
     e.preventDefault();
     if(e.target.classList.contains('recipe-btn')){
         let recp = e.target.parentElement;
-        console.log(recp)
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${recp.id}`)
         .then(response=>response.json())
         .then(data=>{recipeInformation(data)})
@@ -57,7 +54,6 @@ function getRecpie(e){
 function recipeInformation(data){
     recpInfo.innerHTML=""
     recpObj=data.meals[0];
-    console.log(recpObj)
     let recipeCard =`
     <div id="topRecpCard">
         <h3>${recpObj.strMeal}</h3>
