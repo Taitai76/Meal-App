@@ -16,10 +16,11 @@ function recipeL(){
     .then(response => response.json())
     .then(data => {
         foodL.innerHTML="";
+        recpInfo.innerHTML=""
         if (data.meals){
         data.meals.forEach(rec => renderRCards(rec))
     }else{
-        let tHtml=`<div id="error">ingredient did not match a recipe in our database</div>`
+        let tHtml=`<div id="error">Ingredient did not match a recipe in our database<br>Please make sure its spelled correctly</div>`
         foodL.innerHTML=tHtml;
     }
 });
