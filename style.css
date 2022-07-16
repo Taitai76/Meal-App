@@ -39,5 +39,10 @@ input[type=text]{
     font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 .recipe-btn{
-    
+    background-color: #272343;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }

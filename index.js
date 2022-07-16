@@ -65,7 +65,7 @@ function recipeInformation(data){
         <h4>Instructions</h4>
         <p> ${recpObj.strInstructions}</p>
         <h4>Video</h4>
-        <a href = "${recpObj.strYoutube}">Watch Video</a>
+        <a class = "recipe-btn" href = "${recpObj.strYoutube}">Watch Video</a>
     </div>
     `
     recpInfo.innerHTML=recipeCard;
