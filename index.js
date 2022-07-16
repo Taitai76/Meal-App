@@ -35,13 +35,13 @@ function renderRCards(data){
     <div id=${data.idMeal}>
     <img src = "${data.strMealThumb}">
     <h2> ${data.strMeal}</h2>
-    <a href = "#" class = "recipe-btn">Get Recipe</a>
+    <a class = "recipe-btn">Get Recipe</a>
     </div>
     `
     foodL.appendChild(card);
 }
 
-//When get recipe is hoverd over the rcipie dive at top will update
+//When get recipe is hovered over the rcipie dive at top will update
 function getRecpie(e){
     e.preventDefault();
     if(e.target.classList.contains('recipe-btn')){
@@ -57,13 +57,15 @@ function getRecpie(e){
 function recipeInformation(data){
     recpInfo.innerHTML=""
     recpObj=data.meals[0];
-    console.log(recpObj.strMeal)
+    console.log(recpObj)
     let recipeCard =`
     <div id="topRecpCard">
         <h3>${recpObj.strMeal}</h3>
         <img class="recpImg" src = "${recpObj.strMealThumb}">
         <h4>Instructions</h4>
         <p> ${recpObj.strInstructions}</p>
+        <h4>Video</h4>
+        <a href = "${recpObj.strYoutube}">Watch Video</a>
     </div>
     `
     recpInfo.innerHTML=recipeCard;
