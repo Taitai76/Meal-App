@@ -50,6 +50,8 @@ function getRecpie(e){
 
     }
 
+// after the data is recived, a Div will be created in order to show how to make a 
+//meal with a video 
 }
 function recipeInformation(data){
     recpInfo.innerHTML=""

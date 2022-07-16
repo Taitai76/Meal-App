@@ -22,6 +22,7 @@ body{
     border-radius: 1rem;
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.8);
     margin: 2rem 0;
+    background-color: #e3f6f5;;
 }
 #foodList{
     display: grid;
