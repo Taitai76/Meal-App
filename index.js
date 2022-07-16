@@ -65,6 +65,7 @@ function recipeInformation(data){
     </div>
     `
     recpInfo.innerHTML=recipeCard;
+    scroll(0,10);
 }
 
 });
