@@ -59,11 +59,11 @@ function recipeInformation(data){
     recpObj=data.meals[0];
     let recipeCard =`
     <div id="topRecpCard">
-        <h3>${recpObj.strMeal}</h3>
+        <h2>${recpObj.strMeal}</h2>
         <img class="recpImg" src = "${recpObj.strMealThumb}">
-        <h4>Instructions</h4>
+        <h3>Instructions</h3>
         <p> ${recpObj.strInstructions}</p>
-        <h4>Video</h4>
+        <h3>Video</h3>
         <a class = "recipe-btn" href = "${recpObj.strYoutube}">Watch Video</a>
     </div>
     `
